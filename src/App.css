@@ -38,5 +38,5 @@
 }
 
 body {
-  background-color: #508bfc;
+  background: linear-gradient(45deg, rgb(71, 114, 255), rgb(66, 255, 107));
 }
