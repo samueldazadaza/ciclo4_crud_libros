@@ -23,12 +23,15 @@ function App() {
             <MDBCardBody className='p-5 w-100 d-flex flex-column'>
 
               <h2 className="fw-bold mb-2 text-center">Iniciar sesion en tienda Libros</h2>
-              <p className="text-white-50 mb-3">Please enter your login and password!</p>
+              <p className="text-primary-50 mb-3">Please enter your login and password!</p>
 
               <MDBInput wrapperClass='mb-4 w-100' label='Correo electronico' id='formControlLg' type='email' size="lg"/>
               <MDBInput wrapperClass='mb-4 w-100' label='Contraseña' id='formControlLg' type='password' size="lg"/>
 
-              <MDBCheckbox name='flexCheck' id='flexCheckDefault' className='mb-4' label='Recordar contraseña' />
+              <MDBCheckbox wrapperClass='w-50' name='flexCheck' id='flexCheckDefault' className='mb-4' label='Recordar contraseña' />
+              <a href="!#">
+                <p>Olvidaste tu contraseña</p>
+              </a>
 
               <MDBBtn size='lg'>
                 Ingresar
@@ -36,15 +39,6 @@ function App() {
 
               <hr className="my-4" />
 
-              <MDBBtn className="mb-2 w-100" size="lg" style={{backgroundColor: '#dd4b39'}}>
-                <MDBIcon fab icon="google" className="mx-2"/>
-                Ingresar con google
-              </MDBBtn>
-
-              <MDBBtn className="mb-4 w-100" size="lg" style={{backgroundColor: '#3b5998'}}>
-                <MDBIcon fab icon="facebook-f" className="mx-2"/>
-                Ingresar con facebook
-              </MDBBtn>
 
             </MDBCardBody>
           </MDBCard>
