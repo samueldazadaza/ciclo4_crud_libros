@@ -20,6 +20,9 @@ en body / raw /json digitar
 "precio": "123000"
 }
 
+BUSCAR POR TITULO en GET
+http://localhost:8080/api/libros?title=cien años de soledad 7
+
 ---
 
 # Node.js Express & MongoDB: CRUD Rest APIs
