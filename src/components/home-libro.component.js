@@ -15,7 +15,7 @@ export default class HomeLibro extends Component {
             <img src="mockup.jpg" class="d-block w-100" alt="n" />
           </div>
           <div class="carousel-item">
-            <img src="mockup.jpg" class="d-block w-100" alt="b" />
+            <img src="mockup.jpg" class="d-block w-100" alt="bi" />
           </div>
           <div class="carousel-item">
             <img src="bookp.jpg" class="d-block w-100" alt="e" />
