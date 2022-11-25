@@ -1,6 +1,16 @@
 module.exports = mongoose => {
   var schema = mongoose.Schema(
     {
+      id_libro: String,
+      titulo: String,
+      autor: String,
+      genero: String,
+      fecha_publicacion: String,
+      editorial: String,
+      cantidad: String,
+      precio: String,
+      titulo: String,
+
       title: String,
       description: String,
       published: Boolean
@@ -14,6 +24,6 @@ module.exports = mongoose => {
     return object;
   });
 
-  const Tutorial = mongoose.model("tutorial", schema);
-  return Tutorial;
+  const Libro = mongoose.model("libro", schema);
+  return Libro;
 };
