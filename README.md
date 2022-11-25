@@ -1,14 +1,41 @@
+Tutorial tomado desde 👇👇👇:
+https://www.bezkoder.com/node-express-mongodb-crud-rest-api/
+
+---
+
+ACCEDER A API EN LOCAL:
+lISTAR LIBROS CON get EN POSTMAN:
+http://localhost:8080/api/libros
+
+crear libro con POST:
+en body / raw /json digitar
+
+{
+"title": "cien años de soledad",
+"description": "libro mundial",
+"published": true,
+"autor": "gabriel garcia marquez 54",
+"genero": "comedia",
+"cantidad": "33",
+"precio": "123000"
+}
+
+---
+
 # Node.js Express & MongoDB: CRUD Rest APIs
 
 For more detail, please visit:
+
 > [Node.js, Express & MongoDb: Build a CRUD Rest Api example](https://www.bezkoder.com/node-express-mongodb-crud-rest-api/)
 
 > [Server side Pagination in Node.js with MongoDB and Mongoose](https://www.bezkoder.com/node-js-mongodb-pagination/)
 
 Security:
+
 > [Node.js + MongoDB: User Authentication & Authorization with JWT](https://www.bezkoder.com/node-js-mongodb-auth-jwt/)
 
 Associations:
+
 > [MongoDB One-to-One relationship tutorial with Mongoose examples](https://www.bezkoder.com/mongoose-one-to-one-relationship-example/)
 
 > [MongoDB One-to-Many Relationship tutorial with Mongoose examples](https://www.bezkoder.com/mongoose-one-to-many-relationship/)
@@ -16,6 +43,7 @@ Associations:
 > [MongoDB Many-to-Many Relationship with Mongoose examples](https://www.bezkoder.com/mongodb-many-to-many-mongoose/)
 
 Fullstack:
+
 > [Vue + Node.js + Express + MongoDB example](https://www.bezkoder.com/vue-node-express-mongodb-mevn-crud/)
 
 > [Angular 8 + Node.js + Express + MongoDB example](https://www.bezkoder.com/angular-mongodb-node-express/)
@@ -33,6 +61,7 @@ Fullstack:
 > [React + Node.js + Express + MongoDB example](https://www.bezkoder.com/react-node-express-mongodb-mern-stack/)
 
 Integration (run back-end & front-end on same server/port)
+
 > [Integrate React with Node.js Restful Services](https://www.bezkoder.com/integrate-react-express-same-server-port/)
 
 > [Integrate Angular with Node.js Restful Services](https://www.bezkoder.com/integrate-angular-10-node-js/)
@@ -40,11 +69,13 @@ Integration (run back-end & front-end on same server/port)
 > [Integrate Vue with Node.js Restful Services](https://www.bezkoder.com/serve-vue-app-express/)
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Run
+
 ```
 node server.js
 ```
