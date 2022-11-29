@@ -21,23 +21,23 @@ export default class LoginLibro extends Component {
         <MDBRow className='d-flex justify-content-center align-items-center h-100'>
           <MDBCol col='12'>
   
-            <MDBCard className='bg-white my-5 mx-auto' style={{borderRadius: '1rem', maxWidth: '500px'}}>
+            <MDBCard className='bg-white my-5 mx-auto' style={{borderRadius: '1rem', maxWidth: '400px'}}>
               <MDBCardBody className='p-5 w-100 d-flex flex-column'>
   
-                <h2 className="fw-bold mb-4 text-center">Iniciar sesion</h2>
+                <h3 className="fw-bold mb-5 text-center">Iniciar sesion</h3>
                 
   
-                <MDBInput wrapperClass='mb-4 w-100' label='Correo electronico' id='formControlLg' type='email' size="lg"/>
-                <MDBInput wrapperClass='mb-4 w-100' label='Contraseña' id='formControlLg' type='password' size="lg"/>
+                <MDBInput wrapperClass='mb-4 w-100' placeholder="Correo electrónico"  id='formControlLg' type='email' size="lg"/>
+                <MDBInput wrapperClass='mb-4 w-100' placeholder='Contraseña' id='formControlLg' type='password' size="lg"/>
   
                 <MDBCheckbox wrapperClass='w-50' name='flexCheck' id='flexCheckDefault' className='mb-4' label='Recordar contraseña' />
-                <a href="!#">
+                <a href="confirm-password">
                   <p>Olvidaste tu contraseña</p>
                 </a>
                 <a href="user-register">
                   <p>Crear cuenta nueva</p>
                 </a>
-                <MDBBtn size='lg' href="home-libro">
+                <MDBBtn className= "m-3"size='lg' href="home-libro">
                   Ingresar
                 </MDBBtn>
   

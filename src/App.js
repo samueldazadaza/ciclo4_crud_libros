@@ -14,6 +14,8 @@ import HomeLibro from "./components/home-libro.component";
 import ListaLibro from "./components/lista-libro.component";
 import LoginLibro from "./components/login-libro.component";
 import UserRegister from "./components/user-register.component";
+import ConfirmPassword from "./components/confirm-password.component";
+
 
 
 function App() {
@@ -30,7 +32,7 @@ function App() {
                     <img
                       src="logo libros4.png"
                       alt="Libro"
-                      width="83"
+                      width="70"
                       class="logo"
                     />
                   </nav>
@@ -79,7 +81,7 @@ function App() {
         <Container>
           <Row>
             <Col md={12}>
-              <div className="wrapper">
+              <div className="wrapper ">
                 <Switch>
                   <Route
                     exact
@@ -100,8 +102,12 @@ function App() {
                     exact
                     path="/user-register"
                     component={(props) => <UserRegister {...props} />}
-                  />
-                   
+                 />
+                  <Route
+                    exact
+                    path="/confirm-password"
+                    component={(props) => <ConfirmPassword {...props} />}
+                 />
                 </Switch>
               </div>
             </Col>

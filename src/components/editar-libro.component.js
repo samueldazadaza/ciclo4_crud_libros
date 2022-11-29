@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-export default class RegistroLibro extends Component {
+export default class EditarLibro extends Component {
   constructor(props) {
     super(props);
     this.onChangeLibroId = this.onChangeLibroId.bind(this);
@@ -25,7 +25,26 @@ export default class RegistroLibro extends Component {
       cantidad: "",
     };
   }
+  componentDidMount() {
+    axios
+      .get(
+        "http://localhost:4000/students/editar-libro/" +
+          this.props.match.params.id
+      )
+      .then((res) => {
+        this.setState({
+          id: res.data.id,
+          titulo: res.data.titulo,
+          autor: res.data.autor,
+          genero: res.data.genero,
+          cantidad: res.data.cantidad,
 
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
   onChangeLibroId(e) {
     this.setState({ id: e.target.value }); //sst
   }
@@ -54,9 +73,21 @@ export default class RegistroLibro extends Component {
     };
 
     axios
-      .post("http://localhost:4000/libros/registro-libro", libroObject)
-      .then((res) => console.log(res.data));
-    this.setState({ id: "", titulo: "", autor: "", genero: "", cantidad: "" });
+      .put(
+        "http://localhost:4000/libros/update-libro"+
+          this.props.match.params.id, 
+        libroObject
+      )
+      .then((res) => {
+        console.log(res.data);
+        console.log("Student successfully updated");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+    // Redirect to Student List
+    this.props.history.push("/lista-libro"); 
   }
 
   render() {
@@ -70,7 +101,7 @@ export default class RegistroLibro extends Component {
                   <Form onSubmit={this.onSubmit} className="form">
                     <h3 className="fw-bold mb-4 text-center">Registrar Libro</h3>
                     <center>
-                      <Form.Group controlId="id_libro">
+                      <Form.Group controlId="id">
                         <FormLabel></FormLabel>
                         <Form.Control
                           type="number"
